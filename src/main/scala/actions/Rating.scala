@@ -1,6 +1,6 @@
 package actions
 
-import slick.driver.H2Driver.api._
+import slick.jdbc.H2Profile.api._
 
 sealed abstract class Rating(val stars: Int)
 

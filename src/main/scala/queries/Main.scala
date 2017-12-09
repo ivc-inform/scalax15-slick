@@ -1,6 +1,6 @@
 package queries
 
-import slick.driver.H2Driver.api._
+import slick.jdbc.H2Profile._
 
 import scala.concurrent._
 import scala.concurrent.duration._

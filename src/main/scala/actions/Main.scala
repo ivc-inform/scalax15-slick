@@ -1,13 +1,9 @@
 package actions
 
+import slick.jdbc.H2Profile.api._
+
 import scala.concurrent._
 import scala.concurrent.duration._
-import scala.concurrent.ExecutionContext.Implicits.global
-
-import slick.dbio.DBIOAction
-import slick.profile.SqlAction
-
-import slick.driver.H2Driver.api._
 
 object Main {
 

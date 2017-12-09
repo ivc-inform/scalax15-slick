@@ -1,18 +1,15 @@
 package profiles
 
+import slick.driver.H2Driver
+import slick.jdbc.JdbcProfile
+
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent._
 import scala.concurrent.duration._
-import scala.concurrent.ExecutionContext.Implicits.global
-
-import slick.driver.{JdbcProfile, H2Driver}
 
 trait DatabaseProfile {
   val profile: JdbcProfile
-
-  import profile.api._
 }
-
-
 
 trait ArtistDatabaseModule {
   self: DatabaseProfile =>
@@ -31,7 +28,6 @@ trait ArtistDatabaseModule {
 
   lazy val ArtistTable = TableQuery[ArtistTable]
 }
-
 
 
 trait AlbumDatabaseModule {

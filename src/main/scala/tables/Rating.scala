@@ -1,6 +1,6 @@
 package tables
 
-import slick.driver.H2Driver.api._
+import slick.jdbc.H2Profile._
 
 sealed abstract class Rating(val stars: Int)
 

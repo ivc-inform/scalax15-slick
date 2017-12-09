@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
 )
 
 val ammoniteInitialCommands = """
-  |import slick.driver.H2Driver.api._
+  |import slick.jdbc.H2Profile.api._
   |import scala.concurrent._
   |import scala.concurrent.duration._
   |import scala.concurrent.ExecutionContext.Implicits.global
