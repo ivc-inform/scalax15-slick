@@ -2,7 +2,7 @@ name := "scalax15-slick"
 
 version := "1.0"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.12.4"
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -17,10 +17,10 @@ scalacOptions ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.typesafe.slick" %% "slick"           % "3.1.0",
-  "com.h2database"      % "h2"              % "1.4.185",
-  "ch.qos.logback"      % "logback-classic" % "1.1.2",
-  "com.lihaoyi"         % "ammonite-repl"   % "0.4.8" cross CrossVersion.full
+  "com.typesafe.slick" %% "slick"           % "3.2.1",
+  "com.h2database"      % "h2"              % "1.4.196",
+  "ch.qos.logback"      % "logback-classic" % "1.2.3",
+  "com.lihaoyi"         % "ammonite-repl"   % "1.0.3-1-cd346fb" cross CrossVersion.full
 )
 
 val ammoniteInitialCommands = """
