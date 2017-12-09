@@ -1,7 +1,6 @@
 package profiles
 
-import slick.driver.H2Driver
-import slick.jdbc.JdbcProfile
+import slick.jdbc.{H2Profile, JdbcProfile}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent._
@@ -106,7 +105,7 @@ class DatabaseLayer[A <: JdbcProfile](val profile: JdbcProfile) extends Database
 
 
 object Main {
-  val databaselayer = new DatabaseLayer(H2Driver)
+  val databaselayer = new DatabaseLayer(H2Profile)
 
   import databaselayer._
 
