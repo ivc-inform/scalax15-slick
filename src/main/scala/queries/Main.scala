@@ -1,6 +1,6 @@
 package queries
 
-import slick.jdbc.H2Profile._
+import slick.jdbc.H2Profile.api._
 
 import scala.concurrent._
 import scala.concurrent.duration._

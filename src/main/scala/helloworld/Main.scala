@@ -24,8 +24,6 @@ object Main {
 
   lazy val AlbumTable = TableQuery[AlbumTable]
 
-
-
   // Actions ------------------------------------
 
   val createTableAction =
