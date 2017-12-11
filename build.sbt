@@ -17,7 +17,7 @@ scalacOptions ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.typesafe.slick" %% "slick"           % "3.2.1",
+  "com.simplesys.core" %% "slick-extension" % "1.5-SNAPSHOT",
   "com.h2database"      % "h2"              % "1.4.196",
   "ch.qos.logback"      % "logback-classic" % "1.2.3",
   "com.lihaoyi"         % "ammonite-repl"   % "1.0.3-1-cd346fb" cross CrossVersion.full
